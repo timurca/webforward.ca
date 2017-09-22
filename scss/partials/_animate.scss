@@ -1,0 +1,147 @@
+/*-----------------------------------------------------------------------------
+   7. Animate
+-----------------------------------------------------------------------------*/
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/*********************************************
+	-	fadeInRight	-
+**********************************************/
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+
+/*********************************************
+	-	fadeInUp	-
+**********************************************/
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+/*********************************************
+	-	fadeIn	-
+**********************************************/
+
+@keyframes fadeIn { 
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+/*********************************************
+	-	bouncIn	-
+**********************************************/
+
+@keyframes bouncIn {
+    from{
+        transform: scale(0);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.5);
+    }
+    
+    to{
+        transform: scale(1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.5);
+    }
+}
+
+.bouncIn {
+    animation-name: bouncIn;
+    animation-duration: .5s;
+}
+
+/*********************************************
+	-	fullWidth	-
+**********************************************/
+
+@keyframes fullWidth{
+    from{
+        width:0;
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.5);
+    }
+    
+    to{
+        width:100%;
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.5);
+    }
+}
+
+.fullWidth {
+    animation-name: fullWidth;
+}
+
+
+
+.animated{
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
+
+@keyframes scrollDown{
+    0%{
+        opacity:0;
+        transform: translateY(-100%);
+    }
+    
+    10%{
+        opacity:1;
+        transform: translateY(-100%);
+    }
+    
+    50%{
+        opacity:1;
+        transform: translateY(-100%);
+    }
+    
+    100%{
+        opacity:0;
+        transform: translateY(0);
+    }
+}
+
+.scrollDown{
+    animation: 3s ease-in-out infinite scrollDown;
+}
